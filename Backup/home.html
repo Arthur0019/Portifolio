@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="imagem/png" href="logo.png" />
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="home.css">
+    
+        <title>Meu Portifólio</title>
+  </head>
+  <body>
+  <header id="header">
+        <a href="home.php" class="logo"><img class="lg" src="logo2.png" style="height: 78px"><div class="titulo"> &lt Arthur Code &gt</div></a>
+        <ul>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="contato.php">Contato</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h1 id="text"><span>Portifólio de</span><br>Arthur</h1>
+        
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="florest.png" id="forest">
+        
+        <a href="#conteudo" class="c-article__btn-go-article">Ir para o artigo</a>
+        
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </Section>
+
+
+    
+    <div class="sec">
+    <main>
+    <div class="global">
+        <div id="conteudo">
+            <!--
+            
+            <div class="area">
+            <div class="chart">
+            <div class="radio_chart" id="radioChartContent">
+            </div>
+            <div class="cap">
+            </div>
+            <div class="value" id="percentValue">
+            0%
+            </div>
+            </div>
+            </div>
+
+        <div class="area">
+        
+            <button onclick="goTo(75)" style="background-color: #244ADA;">
+                CSS
+            </button>
+            <button onclick="goTo(90)" style="background-color: #DC4B25;">
+                HTML
+            </button>
+            <button onclick="goTo(60)" style="background-color: #DB9B26;">
+                JavaScript
+            </button>
+            <button onclick="goTo(80)" style="background-color: #1F7043;">
+                Excel e VBA
+            </button>
+            <button onclick="goTo(5)" style="background-color: #F8CD40; color: #3571A2;">
+                Python
+            </button>
+            <button onclick="goTo(2)" style="background-color: #00D9F5;">
+                PHP
+            </button>
+            
+        </div>
+    -->
+    
+    <h2><center>Conhecimentos</center></h2>
+
+        <div class="page-content">
+        
+
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">CSS<br>75%</h3>
+                    <p class="copy">Cascading Style Sheets é um mecanismo para adicionar estilo a um documento web.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">HTML<br>90%</h3>
+                    <p class="copy">HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">Javascript<br>60%</h3>
+                    <p class="copy">JavaScript é uma linguagem de programação interpretada estruturada, de script em alto nível com tipagem dinâmica fraca e multiparadigma.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">Excel VBA Power BI<br>80%</h3>
+                    <p class="copy">O Microsoft Excel é um editor de planilhas produzido pela Microsoft</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">Python<br>5%</h3>
+                    <p class="copy">Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h3 class="title2">PHP<br>2%</h3>
+                    <p class="copy">PHP costuma ser mais usado para comunicação do lado do servidor (back-end).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </main>
+
+
+  </body>
+
+  <script>
+        function goTo(frame){
+	reset();
+
+  setTimeout(function(){
+    var chart = document.getElementById("radioChartContent"), pVal = document.getElementById("percentValue");
+
+    chart.classList.add("animate");
+
+    var currentPercent = 0;	
+    var currTimeout = setInterval(function(){
+      if(currentPercent == frame || currentPercent > 100){
+      		
+          clearInterval(currTimeout);
+          chart.style.animationPlayState = "paused";
+          chart.style.webkitAnimationPlayState = "paused";
+          
+          return false;
+        }else{
+          currentPercent++;
+          pVal.innerHTML = currentPercent+"%";
+        }
+    }, 10);
+  },100);
+}
+
+
+function reset(){
+	var chart = document.getElementById("radioChartContent"), pVal = document.getElementById("percentValue");
+  
+  chart.classList.remove("animate");
+  pVal.innerHTML = "0%";
+  chart.style.animationPlayState = "initial";
+  chart.style.webkitAnimationPlayState = "initial";
+}
+    </script>
+
+
+
+        <h2><center>Propósito desse site</center></h2>
+         <p>O principal intuito desse site é me apresentar e colocar todos meus conhecimentos em prática para vocês leitores aproveitarem e se gostarem ou quiser entrar em contato e me mandar uma mensagem estarei com certeza disposto  ajudar e também a aprender com cada um.
+            <br><br>
+            Bom um pequeno resumo sobre mim, primeiramente me chamo Arthur Henrique Soares Freitas, resido no interior de São Paulo na cidade de <strong class="relevante">Bragança Paulista</strong>, sou estudate e um amante de <strong class="relevante">Programação</strong> na universidade Anhembi Morumbi, tenho o conhecimento das principais linguagens, sendo elas: <strong class="relevante">HTML, CSS, JavaScript, PHP, Python, MySQL </strong>e durante um tempo no ensino médio praticava o C++ e Arduino, mas devido a falta de prática necessito reaprender, atualmente me encontro desempregado, mas correndo atrás do prejuizo e em busca de novas oportunidades para práticar e com certeza aprender mais com profissionais da área. 
+            <br><br>
+            Já trabalhei no Grupo GFG mais conhecido pela Dafiti e Kanui, onde participei do time de Supply Chain, nosso time auxiliva todos times de produção em diversos chamados, emissão de NF, contabilzação e controle de demandas do CD e do time, realizando aprensentações em dashboards mensais e semanais, nossas principais ferramentas eram a mais famosas plataformas de planilhamento <strong class="relevante">(Excel, Google Sheets e Power BI), SAP e a plataforma de Jiras da Atlassian</strong>.
+            <br><br>
+         </p>
+    </div>
+    
+    <footer class="rodapé">
+            <center>
+            <div class="text_rod">
+                    <article>
+                    &copy;2022. Arthur Freitas. Todos os direitos reservados.
+                    
+                        <div class="img_rod">
+                            <a href="https://www.instagram.com/arthur.hfreitas/" target="_blank"><img class="insta" src="insta.png" style="height: 25px"></a>
+                            <a href="https://www.linkedin.com/in/arthur-henrique-a6866a200/" target="_blank"><img class="linkedin" src="linkedin.png" style="height: 25px"></a>
+                            <a class="whats" href="https://wa.me/+5511959854533" target="_blank"><img class="whats" src="whats.png" ></a>
+                        </div>
+                    </article>
+                </div>
+            </center>
+        </footer>    
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+
+
+
+ 
+    </body>
+</html>
