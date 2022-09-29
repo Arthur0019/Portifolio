@@ -1,6 +1,6 @@
 <h1 align="center">Meu portifólio</h1>
 <div>
-<h2>Acesse:</h2><h2><a href="https://arthur0019.github.io/Portifolio" target="_blank">https://arthur0019.github.io/Portifolio</a></h2>
+<h2>Acesse:</h2><h2><a href="https://arthur0019.github.io/project1/" target="_blank">https://arthur0019.github.io/project1//Portifolio</a></h2>
 <h3>Esse site fiz com o propósito de demonstrar o básico de conhecimneto que tenho abosorvido em meus estudo de FrontEnd</h3>
 <p>Site báseado em:</p>
 
